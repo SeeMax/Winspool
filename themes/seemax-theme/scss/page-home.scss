@@ -1,0 +1,328 @@
+.home-page {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  // background:#CF5300;
+}
+
+//////////////////////////
+/// OWNER STYLES ////
+////////////////////////
+
+.single-owner, .chart-top-section {
+  width:100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom:60px;
+
+  .content {
+    padding:0px 25px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+.owner-area {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(#CF5300, #ea7425, #CF5300);
+  padding:46px 40px 36px 40px;
+  overflow: hidden;
+  border-radius:90px 0 0 0;
+  box-shadow: inset 0px 8px 6px -2px rgba(0,0,0,0.25);
+  border:5px solid white;
+}
+
+.owner-background {
+  z-index:1;
+  opacity:.12;
+  background-image: url("img/leather-dimple.svg");
+  background-size: 12px 12px;
+}
+
+.owner-rank {
+  position: relative;
+  z-index: 2;
+  width:40px;
+  margin-top:4px;
+  height:auto;
+}
+
+.rank-icon {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  height:40px;
+  width:40px;
+  color:#f7f7f7;
+  border:5px solid #f7f7f7;
+  margin-right: 14px;
+  padding-right:1px;
+  text-align: center;
+  padding-top:2px;
+  font-weight:900;
+  font-size:22px;
+  line-height: 1;
+}
+
+.owner-info {
+  padding-left:10px;
+  width:calc(50% - 40px);
+}
+
+.owner-played {
+  display: inline-block;
+  font-size:17px;
+  color:#f7f7f7;
+  width:auto;
+  font-weight: 300;
+  transform: translateY(-1px);
+}
+
+.owner-names {
+  width:100%;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index:2;
+  font-size:50px;
+  line-height: 1;
+  font-weight:900;
+  color:#f7f7f7;
+}
+
+.owner-wins {
+  width:100%;
+  font-size:34px;
+  font-weight: 600;
+  position: relative;
+  z-index:2;
+  color:#f7f7f7;
+  margin-bottom:18px;
+}
+
+.owner-projections {
+  position: relative;
+  z-index:2;
+  display: inline-block;
+  width:auto;
+  margin-bottom:6px;
+  color:#2f2f2f;
+
+  .projection-bar {
+    display:inline-block;
+    margin: 0px 10px;
+    transform: translateY(2px);
+    padding-top:3px;
+    width: 1px;
+    background:#2f2f2f;
+    height: 1em;
+  }
+
+  .digits {
+    font-weight: 600;
+  }
+}
+
+/////////////////////
+/// TEAM STYLES ////
+///////////////////
+
+.owner-teams {
+  position: absolute;
+  right:75px;
+  top:0px;
+  z-index: 3;
+  width:40%;
+  height:auto;
+  background: white;
+  box-shadow: inset 0px 8px 6px -2px rgba(0,0,0,0.15), 0px 4px 4px 0px rgba(0,0,0,0.25);
+  padding:0px;
+  background:#f7f7f7;
+  margin-top: 5px;
+}
+
+.single-team, .chart-titles {
+  font-size:12px;
+  position: relative;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: stretch;
+  align-content: stretch;
+  border-top:1px solid #e6e6e6;
+}
+
+.team-logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height:24px;
+  // padding:6px;
+  width:auto;
+  margin:0 auto;
+
+  img {
+    height:100%;
+    width:auto;
+  }
+}
+
+.single-chart-title, .team-info, .team-wins, .team-loses, .team-played {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+  font-weight: 900;
+  text-align: center;
+  border-left:1px solid #e6e6e6;
+  padding:5px 2px;
+}
+
+
+.team-nickname {
+  width:100%;
+}
+
+.team-info {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.team-wins {
+
+}
+
+.team-loses {
+
+}
+
+.team-played {
+
+}
+
+.team-nickname,.team-city, .team-conference {
+  display: none;
+}
+
+
+//////////////////////////
+/// CHART TOP STYLES ////
+////////////////////////
+
+.chart-top-section {
+
+  .content {
+
+  }
+}
+
+.chart-titles {
+  width:100%;
+  border-top:0px solid white;
+  padding-top:3px;
+}
+
+.single-chart-title {
+  font-weight: 400;
+  padding-bottom:6px;
+  padding-top:10px;
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+
+  .owner-rank {
+    width:100%;
+    margin-bottom:6px;
+  }
+
+  .owner-info {
+    padding-left:0;
+    width:50%;
+  }
+
+  .owner-wins {
+    margin-bottom: 10px;
+  }
+
+  .owner-projections {
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-projection {
+      width:100%;
+      margin-bottom:4px;
+    }
+
+
+    .projection-bar {
+      display: none;
+    }
+  }
+
+  .owner-teams {
+    height: calc(100% + 10px);
+    display: flex;
+    flex-wrap: wrap;
+    right: 60px;
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .single-owner, .chart-top-section {
+    margin-bottom:10px;
+
+    *{
+      text-align: center;
+    }
+
+    .content {
+      padding:0px 15px;
+    }
+  }
+
+  .rank-icon {
+    margin:0 auto 6px auto;
+    padding-top:0px;
+    padding-right:0px;
+  }
+
+  .owner-area {
+    padding:20px 30px 40px 30px;
+  }
+
+  .owner-info {
+    width:100%;
+  }
+
+  .owner-names {
+    justify-content: center;
+    font-size:40px;
+    margin-bottom:5px;
+  }
+
+  .owner-teams {
+    position: relative;
+    width:90%;
+    height:auto;
+    left:5%;
+    top:-42px;
+  }
+}
