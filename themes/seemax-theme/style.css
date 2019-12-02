@@ -1372,3 +1372,8 @@ hr {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
+
+.threejs-page #c {
+  width: 100%;
+  height: 100%;
+  display: block; }

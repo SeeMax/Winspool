@@ -9,6 +9,7 @@ var stylish = require('jshint-stylish');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var babel = require('gulp-babel');
 
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -18,6 +19,16 @@ gulp.task('browserSync', function() {
     open: "internal"
   })
 })
+
+gulp.task('babel', function() {
+    return gulp.src(
+      [
+      'node_modules/babel-polyfill/dist/polyfill.js',
+      'scripts/*.js'
+      ])
+      .pipe(babel({presets: ['es2015']}))
+      .pipe(gulp.dest('compiled'))
+});
 
 gulp.task('sass', function(cb) {
   return gulp.src('scss/*.scss')
@@ -78,7 +89,7 @@ gulp.task('uglify', function () {
 });
 
 
-gulp.task('watch', ['browserSync', 'sass', 'css', 'concat'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'css', 'concat', 'babel'], function (){
   gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('style.css', ['css']);
   gulp.watch('*.php', browserSync.reload);

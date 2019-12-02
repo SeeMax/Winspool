@@ -88,7 +88,7 @@
 						<div class="owner-rank"></div>
 						<div class="owner-info">
 							<div class="owner-names">
-								Daveed & Sam
+								Splotchy & Old Blue
 							</div>
 							<div class='owner-wins'>
 								<span class="wins-count"></span> Wins <div class="owner-played">/ <span class="played-count"></span> Played</div>

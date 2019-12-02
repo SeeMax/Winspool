@@ -172,6 +172,13 @@ add_action('init', 'modify_jquery_version');
 function theme_header_scripts() {
   if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
+    wp_register_script('threejs', get_template_directory_uri() . '/js/lib/three.js', array(), '1.0.0', true);
+    wp_enqueue_script('threejs');
+
+    // Enque MY Custom Three Code
+    wp_register_script('mythreejs', get_template_directory_uri() . '/js/three/mythree.js', array(), '1.0.0', true);
+    wp_enqueue_script('mythreejs');
+
     // wp_register_script('ScrollMagic', get_template_directory_uri() . '/js/lib/ScrollMagic.min.js', array(), '2.0.6', true);
     // wp_enqueue_script('ScrollMagic');
 
