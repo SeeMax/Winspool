@@ -1,6 +1,6 @@
 /*jshint multistr: true */
 let localTeams = {
-  "url": "https://www.wins-pool.com/wp-content/themes/seemax-theme/json/teams103119.json",
+  "url": "https://www.wins-pool.com/wp-content/themes/seemax-theme/json/teams121319.json",
 	"method": "GET"
 };
 
